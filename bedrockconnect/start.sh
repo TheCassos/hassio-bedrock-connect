@@ -19,4 +19,4 @@ else
 fi
 
 echo "Initialization completed. Starting BedrockConnect..."
-exec java -Xms256M -Xmx256M -jar BedrockConnect-1.0-SNAPSHOT.jar nodb=true
+exec java -Xms64M -Xmx256M -jar BedrockConnect-1.0-SNAPSHOT.jar nodb=true

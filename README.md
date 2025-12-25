@@ -18,4 +18,4 @@ Remember in order for this addon to work correctly, your HA instance and console
 Add to HAOS in Addons, Addons Store, repositories, url:
 https://github.com/TheCassos/hassio-bedrock-connect
 
-then install configure and install addon: Bedrock Connect
+then install configure and install addon: BedrockConnect Add-on

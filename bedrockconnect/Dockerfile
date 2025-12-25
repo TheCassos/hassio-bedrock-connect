@@ -1,5 +1,6 @@
 ## need alternative for openjdk, thinking: https://hub.docker.com/_/eclipse-temurin/
-FROM openjdk:11
+## testing 'latest', see how we go
+FROM eclipse-temurin:latest
 
 RUN apt update && apt install -y jq
 

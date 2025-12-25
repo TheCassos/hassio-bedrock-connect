@@ -11,7 +11,7 @@ TL; DR; this apps allow you to connect to your own (or actually any) Minecraft B
 
 Remember in order for this addon to work correctly, your HA instance and console must be both in the same VNET (if you have more complicated network setup,  but I assume this might be the case since you're using Home Assistant)
 
-# forked from patrikulus/hassio-bedrock-connect:main to resolve version issues with Bedrock Connect & replace Docker OpenJDK #
+# forked from patrikulus/hassio-bedrock-connect:main to resolve version issues with Bedrock Connect & replace Docker OpenJDK
 
 ## currently testing ##
 

@@ -1,5 +1,5 @@
 name: "BedrockConnect Add-on"
-version: "1.51.4"
+version: "latest"
 slug: "bedrockconnect"
 description: "A Home Assistant add-on for BedrockConnect"
 arch:

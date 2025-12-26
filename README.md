@@ -4,18 +4,28 @@ This is Home Assistant addon for [BedrockConnect](https://github.com/Pugmatt/Bed
 
 TL; DR; this apps allow you to connect to your own (or actually any) Minecraft Bedrock server on your PS4/PS5 and Xbox console.
 
-1. Install this addon
-2. Set your server list in addon config. Please refer to the [documentation](https://github.com/Pugmatt/BedrockConnect?tab=readme-ov-file#defining-your-own-custom-servers) of BedrockConnect
-3. Start the addon
-4. Play Minecraft on your console :)
-
-Remember in order for this addon to work correctly, your HA instance and console must be both in the same VNET (if you have more complicated network setup,  but I assume this might be the case since you're using Home Assistant)
-
 # forked from patrikulus/hassio-bedrock-connect:main to resolve version issues with Bedrock Connect & replace Docker OpenJDK
 
-## currently testing ##
+Alterations:
+1. BedrockConnect version is no longer fixed, replaced with "latest" (minimal intervention required from me, just rebuild docker addon from HAOS).
+2. OpenJDK (from Docker) replaced with OpenJDK by Eclipse Temurin: https://hub.docker.com/_/eclipse-temurin/
+3. OpenJDK (now by Eclipse-Temurin) version is no longer fixed, always latest (minimal intervention required from me, just rebuild docker addon from HAOS)
 
-Add to HAOS in Addons, Addons Store, repositories, url:
+## 26th Dec 2025 works :) Kids are happy ##
+
+1. Add to HAOS in Addons, Addons Store, repositories, url:
 https://github.com/TheCassos/hassio-bedrock-connect
+2. install addon: BedrockConnect Add-on
+3. Configure Addon - Set your server list in addon config. Please refer to the [documentation](https://github.com/Pugmatt/BedrockConnect?tab=readme-ov-file#defining-your-own-custom-servers) of BedrockConnect
+3. Start the addon
+4. Play Minecraft on your console on LAN :)
 
-then install configure and install addon: BedrockConnect Add-on
+Optional, for BedrockConnect while  Minecraft is on Online play:
+I use AdGuard Home (local DNS server) on my HA Green also, so I already have a local DNS server setup (192.168.130.254) on same host (HA Green) - my DHCP server informs all clients to use 192.168.130.254 for DNS already. Again, please refer to BedrockConnect [documentation](https://github.com/Pugmatt/BedrockConnect?tab=readme-ov-file#defining-your-own-custom-servers)
+
+1. add DNS Rewrites to AdGuard:
+geo.hivebedrock.network 192.168.130.254
+2.on console, go to Play, Servers and select The Hive
+this will load BedrockConnect, from HAOS, while Minecraft is Online
+
+Remember in order for this addon to work correctly, your HA instance and console must be both in the same VNET (if you have more complicated network setup,  but I assume this might be the case since you're using Home Assistant)

@@ -2,7 +2,7 @@
 
 This is Home Assistant addon for [BedrockConnect](https://github.com/Pugmatt/BedrockConnect) app
 
-TL; DR; this apps allow you to connect to your own (or actually any) Minecraft Bedrock server on your PS4/PS5 and Xbox console.
+TL; DR; this apps allow you to connect to your own (or actually any) Minecraft Bedrock server on your PS4/PS5, Nintendo Switch and Xbox console.
 
 # forked from patrikulus/hassio-bedrock-connect:main to resolve version issues with Bedrock Connect & replace Docker OpenJDK
 

@@ -21,11 +21,16 @@ https://github.com/TheCassos/hassio-bedrock-connect
 4. Play Minecraft on your console on LAN :)
 
 Optional, for BedrockConnect while  Minecraft is on Online play:
-I use AdGuard Home (local DNS server) on my HA Green also, so I already have a local DNS server setup (192.168.130.254) on same host (HA Green) - my DHCP server informs all clients to use 192.168.130.254 for DNS already. Again, please refer to BedrockConnect [documentation](https://github.com/Pugmatt/BedrockConnect?tab=readme-ov-file#defining-your-own-custom-servers)
 
-1. add DNS Rewrites to AdGuard:
+Context & Info:
+I use AdGuard Home (local DNS server) on my HA Green also, so I already have a local DNS server setup (192.168.130.254) on same host (HA Green) - my DHCP server informs all clients to use 192.168.130.254 for DNS already. AdGuard is great, I recommend you use it anyway and its easy to install on HAOS.
+The thing we need is DNS hostname overides / DNS Rewrite - allows for rewriting requests (Again, please refer to BedrockConnect [documentation](https://github.com/Pugmatt/BedrockConnect?tab=readme-ov-file#defining-your-own-custom-servers))
+
+1. Install, configure and use AdGuard Home on your HAOS and networks - see here: (https://www.home-assistant.io/integrations/adguard/ & https://github.com/hassio-addons/addon-adguard-home)
+3. add DNS Rewrites to AdGuard:
 geo.hivebedrock.network 192.168.130.254
-2.on console, go to Play, Servers and select The Hive
+4. on console, go to Play, then Servers
+5. select The Hive
 this will load BedrockConnect, from HAOS, while Minecraft is Online
 
 Remember in order for this addon to work correctly, your HA instance and console must be both in the same VNET (if you have more complicated network setup,  but I assume this might be the case since you're using Home Assistant)

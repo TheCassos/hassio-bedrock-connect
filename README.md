@@ -7,9 +7,9 @@ TL; DR; this apps allow you to connect to your own (or actually any) Minecraft B
 ## forked from: patrikulus/hassio-bedrock-connect to resolve version issues, causing addon not to work on latest HAOS ##
 
 Minor Alterations I made to patrikulus's project:
-1. BedrockConnect version is no longer fixed, replaced with "latest" (minimal intervention required from me, just rebuild docker addon from HAOS).
+1. BedrockConnect version is no longer fixed, replaced with 'latest' (minimal intervention required from me, just rebuild docker addon from HAOS).
 2. OpenJDK (from Docker) replaced with OpenJDK by Eclipse Temurin: https://hub.docker.com/_/eclipse-temurin/
-3. OpenJDK (now by Eclipse-Temurin) version is no longer fixed, always latest (minimal intervention required from me, just rebuild docker addon from HAOS)
+3. OpenJDK (now by Eclipse-Temurin) version is no longer fixed, always 'latest' (minimal intervention required from me, just rebuild docker addon from HAOS)
 
 ## 26th Dec 2025 works :) Kids are happy ##
 
@@ -30,10 +30,11 @@ The key thing we need is DNS hostname overides / DNS Rewrite - allows for rewrit
 - any DNS Server or proxy that can do this will work.
 
 1. Install, configure and use AdGuard Home on your HAOS and networks - see here: (https://www.home-assistant.io/integrations/adguard/ & https://github.com/hassio-addons/addon-adguard-home)
-3. add DNS Rewrites to AdGuard:
-geo.hivebedrock.network <ip of your HAOS, in my case is 192.168.130.254)
-4. on console, go to Play, then Servers
-5. select 'The Hive'
+2. add DNS Rewrites to AdGuard:
+domain name: geo.hivebedrock.network
+IP address: {IP of your HAOS} (in my case is 192.168.130.254)
+3. on console, go to Play, then Servers
+4. select 'The Hive'
 this will load BedrockConnect, from HAOS, while Minecraft is Online
 
 Remember in order for this addon to work correctly, your HA instance and console must be both in the same VNET (if you have more complicated network setup,  but I assume this might be the case since you're using Home Assistant)

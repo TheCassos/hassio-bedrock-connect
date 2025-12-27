@@ -4,15 +4,14 @@ This is Home Assistant addon for [BedrockConnect](https://github.com/Pugmatt/Bed
 
 TL; DR; this apps allow you to connect to your own (or actually any) Minecraft Bedrock server on your PS4/PS5, Nintendo Switch and Xbox console.
 
-# forked from patrikulus/hassio-bedrock-connect:main to resolve version issues with Bedrock Connect & replace Docker OpenJDK
+## forked from: patrikulus/hassio-bedrock-connect to resolve version issues, causing addon not to work on latest HAOS ##
 
 Minor Alterations I made to patrikulus's project:
 1. BedrockConnect version is no longer fixed, replaced with "latest" (minimal intervention required from me, just rebuild docker addon from HAOS).
 2. OpenJDK (from Docker) replaced with OpenJDK by Eclipse Temurin: https://hub.docker.com/_/eclipse-temurin/
 3. OpenJDK (now by Eclipse-Temurin) version is no longer fixed, always latest (minimal intervention required from me, just rebuild docker addon from HAOS)
 
-## 26th Dec 2025 works :) ##
-## Kids are happy ##
+## 26th Dec 2025 works :) Kids are happy ##
 
 1. Add to HAOS in Addons, Addons Store, repositories, url:
 https://github.com/TheCassos/hassio-bedrock-connect

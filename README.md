@@ -31,8 +31,11 @@ The key thing we need is DNS hostname overides / DNS Rewrite - allows for rewrit
 
 1. Install, configure and use AdGuard Home on your HAOS and networks - see here: (https://www.home-assistant.io/integrations/adguard/ & https://github.com/hassio-addons/addon-adguard-home)
 2. add DNS Rewrites to AdGuard:
+
 domain name: geo.hivebedrock.network
-IP address: {IP of your HAOS} (in my case is 192.168.130.254)
+IP address: {IP of your HAOS} 
+(in my case is 192.168.130.254)
+
 3. on console, go to Play, then Servers
 4. select 'The Hive'
 this will load BedrockConnect, from HAOS, while Minecraft is Online
